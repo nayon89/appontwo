@@ -1,0 +1,883 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.main {
+    display: flex;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+/* ===================================================================================================
+                                        nav-bar start
+==================================================================================================== */
+nav {
+    position: absolute;
+    width: 100%;
+    padding-top: 50px;
+}
+nav .main .logo {
+    width: 30%;
+    padding-top: 10px;
+}
+nav .main .nav-item {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+nav .main .button {
+    width: 10%;
+}
+nav .main .nav-item ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+nav .main .nav-item ul li a {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 15px;
+    position: relative;
+    transition: .4s;
+}
+nav .main .nav-item ul li a:hover {
+    color: #ff2c54;
+}
+nav .main .nav-item ul li:last-child a:hover{
+    color: #fff;
+} 
+
+nav .main .nav-item ul li a span {
+    top: -10px;
+    right: 3px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    color: #ffff;
+    z-index: 1;
+}
+nav .main .nav-item ul li a i {
+    font-size: 20px;
+}
+nav .main .nav-item ul li a i::after {
+    position: absolute;
+    top: -3px;
+    left: 17px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    content: "";
+    background: red;
+}
+nav .main .button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+nav .main .button a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    background: #ff2c54;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .4s;
+}
+nav .main .button a:hover {
+    background: #ffff;
+    color: #ff2c54;
+}
+
+/* ===================================================================================================
+                                        nav-bar end
+==================================================================================================== */
+/* ===================================================================================================
+                                        banner-part start
+==================================================================================================== */
+#banner-part {
+    background: url(../images/appon-header01.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 200px;
+}
+#banner-part .main .banner-text {
+    width: 50%;
+}
+#banner-part .main .banner-text h2 {
+    font-size: 52px;
+    color: #ffffff;
+    margin-top: 50px;
+}
+#banner-part .main .banner-text p {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#banner-part .main .banner-text .button a {
+    background: #ff2c54;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 20px 30px;
+    line-height: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: .4s;
+}
+#banner-part .main .banner-text .button a:hover {
+    background: #9c5fff;
+}
+#banner-part .main .banner-text .button a i {
+    margin-left: 8px;
+}
+#banner-part .main .banner-img {
+    width: 50%;
+    padding-bottom: -3px;
+}
+/* ===================================================================================================
+                                        banner-part end
+==================================================================================================== */
+/* ===================================================================================================
+                                        application-part start
+==================================================================================================== */
+#application-part {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#application-part .main {
+    justify-content: space-around;
+}
+
+#application-part h2 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #1e1e1e;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+#application-part p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+    text-align: center;
+}
+
+#application-part .main .item {
+    width: 29%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(216, 214, 214);
+    text-align: center;
+    transition: .4s;
+
+}
+
+#application-part .main .item .img {
+    margin-top: 50px;
+}
+
+#application-part .main .item .text h2 {
+    font-size: 22px;
+    color: #1e1e1e;
+}
+
+#application-part .main .item .text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 245px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#application-part .main .item:hover {
+    margin: 2px 0;
+    -webkit-box-shadow: 0px 0px 38px -3px rgba(179, 131, 255, 1);
+    -moz-box-shadow: 0px 0px 38px -3px rgba(179, 131, 255, 1);
+    box-shadow: 0px 0px 38px -3px rgba(179, 131, 255, 1);
+    /* -webkit-box-shadow: 0px 0px 49px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 49px -13px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 49px -13px rgba(0,0,0,0.75); */
+    cursor: pointer
+}
+
+/* ===================================================================================================
+                                        application-part end
+==================================================================================================== */
+/* ===================================================================================================
+                                        apps-part start
+==================================================================================================== */
+#operation-part {
+    background: url(../images/appon-home-middle-background-2-1.png) no-repeat left;
+}
+
+#operation-part .main {
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+#operation-part .apps-text {
+    width: 50%;
+    margin-top: 100px;
+}
+
+#operation-part .apps-img {
+    width: 50%;
+}
+
+#operation-part .apps-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: #1e1e1e;
+    line-height: 60px;
+    text-align: left;
+}
+
+#operation-part .apps-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+    text-align: left;
+    width: 517px;
+    margin: 30px 0;
+}
+
+#operation-part .apps-text a {
+    background: #ff2c54;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 20px 30px;
+    line-height: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+#operation-part .apps-text a i {
+    margin-left: 10px;
+}
+
+#operation-part .apps-text a:hover {
+    background: #9c5fff;
+}
+
+#operation-part .application-img {
+    width: 48%;
+}
+
+#operation-part .application-img {
+    display: flex;
+    margin-top: 50px;
+    justify-content: end;
+}
+
+#operation-part .application-text {
+    width: 48%;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+#operation-part .application-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: #1e1e1e;
+    line-height: 60px;
+    text-align: left;
+}
+
+#operation-part .application-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+    text-align: left;
+    width: 517px;
+    margin: 30px 0;
+}
+
+#operation-part .application-text .icon {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#operation-part .application-text .icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#operation-part .application-text .icon span {
+    display: block;
+    padding-left: 140px;
+    margin-bottom: 15px;
+}
+
+#operation-part .application-text .icon .profile {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1e1e1e;
+}
+
+#operation-part .application-text .icon .dislike {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+    width: 400px;
+}
+
+#operation-part .application-text a {
+    display: inline-block;
+    margin-top: 20px;
+    background: #ff2c54;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+#operation-part .application-text a i {
+    margin-left: 10px;
+}
+
+#operation-part .application-text a:hover {
+    background: #9c5fff;
+}
+
+/* ===================================================================================================
+                                        apps-part end
+==================================================================================================== */
+/* ===================================================================================================
+                                        graph-part start
+==================================================================================================== */
+#graph-part {
+    background: url(../images/appon-graph.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#graph-part .text {
+    width: 55%;
+    margin-bottom: 70px;
+}
+
+#graph-part .text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: #ffffff;
+    line-height: 60px;
+    text-align: left;
+    margin-top: 130px;
+}
+
+#graph-part .text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 28px;
+    text-align: left;
+    width: 517px;
+    margin: 30px 0;
+}
+
+#graph-part .text a {
+    display: inline-block;
+    margin-top: 20px;
+    background: #ff2c54;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+#graph-part .text a i {
+    margin-left: 10px;
+}
+
+#graph-part .text a:hover {
+    background: #9c5fff;
+}
+
+#graph-part .img {
+    width: 45%;
+    position: relative;
+
+}
+
+#graph-part .img img {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    right: 20px;
+}
+
+/* ===================================================================================================
+                                        graph-part end
+==================================================================================================== */
+/* ===================================================================================================
+                                        robust-part start
+==================================================================================================== */
+#robust-part {
+    background: url(../images/appon-home-app-bg.png) no-repeat left;
+
+}
+
+#robust-part .robust-img {
+    width: 50%;
+    text-align: right;
+
+}
+
+#robust-part .robust-img img {
+    margin-top: 100px;
+}
+
+#robust-part .robust-text {
+    width: 50%;
+}
+
+#robust-part .robust-text h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #1e1e1e;
+    line-height: 60px;
+    text-align: left;
+    padding-top: 220px;
+}
+#robust-part .robust-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+    text-align: left;
+    width: 517px;
+    margin: 30px 0;
+}
+#robust-part .title h2 {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #1e1e1e;
+    line-height: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+#robust-part .title p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 28px;
+    text-align: center;
+}
+#robust-part .apps-slider {
+    margin: 60px 0;
+}
+
+#robust-part .apps-slider .item {
+    margin: 50px 15px;
+    transition: .4s;
+}
+
+#robust-part .apps-slider .slick-center{
+    transform: scale(1.1)
+}
+#robust-part .apps-slider .item img {
+    width: 100%;
+}
+
+/* ===================================================================================================
+                                        robust-part end
+==================================================================================================== */
+/* ===================================================================================================
+                                        client-part start
+==================================================================================================== */
+#client-part {
+    background: url(../images/client.png) no-repeat center;
+}
+
+#client-part h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #1e1e1e;
+    margin: 20px 0;
+}
+
+#client-part .client-slider .item {
+    position: relative;
+    text-align: center;
+}
+
+#client-part .client-slider .item i {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    font-size: 25px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+#client-part .client-slider .item img {
+    margin: 0 auto;
+}
+
+#client-part .client-slider .item p {
+    width: 590px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1f1f1f;
+    line-height: 33px;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+#client-part .client-slider .item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #1f1f1f;
+    margin-top: 15px;
+}
+
+#client-part .client-slider .item h5 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #1f1f1f;
+    margin-top: 10px;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
+#client-part .client-slider .item i::after {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: -19px;
+    left: -18px;
+    border-radius: 50%;
+    background: #ff2c54;
+    ;
+    content: "";
+    z-index: -1;
+}
+
+#client-part .client-slider .prev {
+    position: absolute;
+    background-color: #f58b9e;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #ffff;
+    cursor: pointer;
+    z-index: 1;
+    transition: .4s;
+}
+
+#client-part .client-slider .next {
+    position: absolute;
+    background-color: #f58b9e;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #ffff;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#client-part .client-slider .prev:hover {
+    background: #f70f3a;
+}
+
+#client-part .client-slider .next:hover {
+    background: #f70f3a;
+}
+
+/* ===================================================================================================
+                                        client-part end
+==================================================================================================== */
+/* ===================================================================================================
+                                        install-part start
+==================================================================================================== */
+#install-part{
+    background: url(../images/app-background.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 50px;
+    height: 530px;
+} 
+#install-part .install-text{
+    width: 30%;
+    
+}
+#install-part .install-text h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+color: #ffffff;
+line-height: 48px;
+text-align: left;
+font-weight: 600;
+margin-top: 115px;
+margin-bottom: 30px;
+
+}
+#install-part .install-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+color: #ffffff;
+line-height: 28px;
+text-align: left;
+font-style: italic;
+width: 500px;
+}
+#install-part .install-text a img{
+    width: 92%;
+    margin-top: 40px;
+}
+#install-part .install-img{
+    width: 70%;
+    position: relative;
+}
+#install-part .install-img img{
+    position: absolute;
+    top: -95px;
+    right: -259px;
+    cursor: pointer;
+    width: 100%;
+}
+ /* #install-part .install-text a{
+    position: relative;
+    background: #000;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 30px; 
+    margin-right: 30px;
+}
+#install-part .install-text a i{
+    position: absolute;
+    font-size: 35px;
+    top: 10px;
+    left: 15px;
+}
+#install-part .install-text a .on{
+     font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+#install-part .install-text a .play{
+     font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+#install-part .install-text a span{
+    display: block;
+    padding-left: 20px;
+    box-sizing: border-box;
+}  */
+
+/* ===================================================================================================
+                                        install-part end
+==================================================================================================== */
+/* ===================================================================================================
+                                        footer-part start
+==================================================================================================== */
+#footer-part {
+    background: url(../images/footer.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#footer-part .footer-logo {
+    width: 22%;
+    margin: 60px 0;
+}
+
+#footer-part .footer-logo p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #cfd3e5;
+    line-height: 25px;
+    text-align: left;
+    width: 75%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#footer-part .footer-logo a {
+    display: inline-block;
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #4d4e56;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: .4s;
+}
+
+#footer-part .footer-logo a:hover {
+    background: #4d4e56;
+}
+
+#footer-part .footer-tweets {
+    margin: 50px 0;
+    width: 22%;
+    color: #ffffff;
+    position: relative;
+}
+
+#footer-part .footer-tweets h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#footer-part .footer-tweets i {
+    position: absolute;
+    top: 55px;
+    left: 0;
+}
+
+#footer-part .footer-tweets p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #cfd3e5;
+    line-height: 28px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    width: 255px;
+}
+
+#footer-part .footer-tweets span a {
+    color: #b9b9b9;
+}
+
+#footer-part .footer-feature {
+    width: 22%;
+    margin: 50px 0;
+    margin-left: 35px;
+}
+
+#footer-part .footer-feature h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#footer-part .footer-feature a {
+    display: block;
+    color: #cfd3e5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#footer-part .footer-feature a i {
+    color: #cfd3e5;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#footer-part .footer-gallery {
+    width: 25%;
+    margin: 50px 0;
+}
+
+#footer-part .footer-gallery h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#footer-part .footer-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#footer-part .footer-gallery .gallery .item {
+    width: 26%;
+    margin-bottom: 10px;
+
+}
+
+#footer-part .footer-gallery .gallery .item img {
+    width: 70px;
+    height: 70px;
+}
+
+/* ===================================================================================================
+                                        footer-part end
+==================================================================================================== */
+/* ===================================================================================================
+                                        footer-bottom start
+==================================================================================================== */
+#footer-bottom {
+    text-align: center;
+    background: #0a0217;
+    color: #6b6b6b;
+    font-size: 15px;
+    padding: 25px 0;
+}
+/* ===================================================================================================
+                                        footer-bottom end
+==================================================================================================== */
